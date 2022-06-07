@@ -1,0 +1,19 @@
+body {
+    font-family: Times New Roman, Times, serif;
+}
+.titulos {
+    background-color: #c4c4c4;
+    text-transform: uppercase;
+    color: #005677;
+}
+.footer {
+    background-color: #005677;
+    color: white;
+    text-align: center;
+    padding: 9px;
+    font-weight: 700;
+}
+header {
+    text-align: center;
+}
+

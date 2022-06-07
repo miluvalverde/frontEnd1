@@ -1,0 +1,32 @@
+body {
+    font-family: 'Gentium Plus', serif;
+    background-color: #e3ffe3;
+    font-weight: 400;
+}
+.titulos {
+    background-color: #8eff8e;
+    text-transform: uppercase;
+    color: #363636;
+}
+.footer {
+    background-color: #008000;
+    color: white;
+    text-align: center;
+    padding: 9px;
+    font-weight: 700;
+}
+header {
+    text-align: center;
+    background-image: url('../img/insecto.png');
+    background-size: 1300px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.foto {
+    width: 200px;
+}
+.fa-brands {
+    width: 30px;
+    color: #e3ffe3;
+}
+

@@ -1,0 +1,60 @@
+* { 
+    box-sizing: border-box 
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 1000px;
+}
+.descuento {
+    background-color: #1CD1B0;
+    font-size: 15px;
+    margin: 0px;
+}
+.heroes {
+    position: sticky;
+    top: 10;
+    background-color: #00669F;
+    margin: 0px;
+    box-shadow: 2px 2px 5px rgb(85, 85, 85)
+}
+.fondo {
+    height: 900px;
+    margin: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.tarjeta {
+    height: 700;
+    width: 300px;
+    margin: auto;
+    position: relative;
+    background-color: #F3F3F3;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(85, 85, 85)
+}
+.batman {
+    position: absolute;
+    left: 90px;
+    top: 130px;
+    border-radius: 300px;
+}
+.letra {
+    margin: 20px;
+    font-weight: 600;
+}
+.corazon {
+    position: absolute;
+    top: 20px;
+    right: 255px;
+}
+input {
+    background-color: #00669F;
+    height: 40px;
+    color: white;
+}
+footer {
+    background-color: #00669F;
+    height: 51px;
+    color: white;
+}
