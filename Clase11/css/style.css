@@ -17,12 +17,14 @@ body {
 .arriba {
     position: absolute;
     right: 10px;
-    top: 40px;
+    top: 35px;
     display: flex;
     flex-direction: row;
 }
-.arriba div{
-    padding: 5px;
+.arriba a{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px;
 }
 .logo {
     position: absolute;
@@ -93,6 +95,10 @@ h2 {
     left: 1000px;
     bottom: 20px;
 }
-.abajo div{
+.abajo a{
+    color: #FFFFFF;
+    text-decoration: none;
     padding: 7px;
+    display: flex;
+    flex-direction: column;
 }
