@@ -1,0 +1,96 @@
+* { 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* HEADER */
+.descuento {
+    background-color: #1CD1B0;
+    font-size: 15px;
+    margin: 0px;
+}
+
+.heroes {
+    position: sticky;
+    top: 0;
+    background-color: #00669F;
+    margin: 0px;
+    box-shadow: 2px 2px 5px rgb(85, 85, 85);
+    z-index: 1;
+}
+
+
+
+/* MAIN */
+main {
+    display: flex;
+    justify-content: center;
+}
+form {
+    background-color: #00669F;
+    margin: 40px;
+}
+.contenedor {
+    display: flex;
+    flex-direction: row;
+}
+.tarjeta1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* FOOTER */
+footer {
+    position: relative;
+    background-color: #00669F;
+    color: white;
+    text-align: center;
+    padding: 1.2rem 0;
+}
+
+footer div {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transform: translateY(-50%);
+}
+
+footer div img {
+    width: 8rem;
+    margin-right: 1rem;
+}
+
+@media (max-width: 1023px) {
+    .fondo {
+        flex-wrap: wrap;
+    }
+}
+/* arreglar cuando es celular el signo de mas */
+
+@media (max-width: 768px){
+    footer div{
+        position: static;
+        text-align: center;
+        justify-content: center;
+        transform: translateY(0);
+    }
+    footer div img{
+        margin: 0;
+    }
+}
+/* queda feo en la compu grande, ver como arreglar */
