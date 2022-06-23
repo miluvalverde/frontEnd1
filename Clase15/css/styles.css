@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 }
-/* no se que esta mal con el html, tiene algo blanco al costado */
+
 
 
 
@@ -24,6 +24,7 @@
 
 
 
+
 /* MAIN */
 body {
     font-family: 'Roboto', sans-serif;
@@ -31,6 +32,7 @@ body {
 
 
 .menu {
+    align-items: center;
     background-color: #F0A83E;
     color: #F3F3F3;
     display: flex;
@@ -87,59 +89,64 @@ body {
     padding: 15px;
 }
 
+
 .productos_destacados {
-    height: 230px;
+    align-items: center;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    height: 230px;
 }
+.varios {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.varios h2 {
+    color: #3C2313;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 10px;
+}
+.productos_destacados img{
+    height: 71px;
+    left: 700px;
+    width: 67px;
+}
+
+
 .destacados {
-    position: relative;
     background-color: #FFFFFF;
     display: flex;
     justify-content: space-evenly;
-}
-.productos_destacados img{
-    left: 700px;
-    width: 67px;
-    height: 71px;
-}
-.varios {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.varios h2 {
-    font-weight: 700;
-    font-size: 40px;
-    color: #3C2313;
-    padding: 10px;
+    position: relative;
 }
 .churrasco {
     height: 350px;
-    width: 265px;
-    position: relative;
     margin: 20px;
+    position: relative;
+    width: 265px;
 }
+.producto1 {
+    position: absolute;
+    top: 290px;
+    left: 35px;
+    color: #3C2313;
+    font-size: 20px;
+}
+.precio1 {
+    position: absolute;
+    top: 320px;
+    left: 100px;
+    color: #F0A83E;
+    font-size: 20px;
+}
+
 .comedero {
     height: 350px;
     width: 265px;
     position: relative;
     margin: 20px;
-}
-.hueso {
-    height: 350px;
-    width: 265px;
-    position: relative;
-    margin: 20px;
-}
-.imagen {
-    width: 265px;
-    height: 268.86px;
-    position: absolute;
-    top: 10px;
 }
 .producto2 {
     position: absolute;
@@ -155,19 +162,12 @@ body {
     color: #F0A83E;
     font-size: 20px;
 }
-.producto1 {
-    position: absolute;
-    top: 290px;
-    left: 35px;
-    color: #3C2313;
-    font-size: 20px;
-}
-.precio1 {
-    position: absolute;
-    top: 320px;
-    left: 100px;
-    color: #F0A83E;
-    font-size: 20px;
+
+.hueso {
+    height: 350px;
+    margin: 20px;
+    position: relative;
+    width: 265px;
 }
 .producto3 {
     position: absolute;
@@ -184,54 +184,61 @@ body {
     font-size: 20px;
 }
 
+.imagen {
+    height: 268.86px;
+    position: absolute;
+    top: 10px;
+    width: 265px;
+}
+
 
 .form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 450px;
     margin: 40px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
 }
 .form legend {
-    color: #3C2313;
-    font-weight: 700;
-    font-size: 30px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    color: #3C2313;
+    display: flex;
+    font-size: 30px;
+    font-weight: 700;
+    justify-content: center;
+    padding: 10px;
 }
 .input {
     color: white;
-    font-weight: 400;
-    width: 450px;
-    padding: 12px 20px;
-    margin: 8px 0;
+    background-color: #3C2313;
     border: 1px solid #3C2313;
     border-radius: 15px;
-    background-color: #3C2313;
+    font-weight: 400;
+    margin: 8px 0;
+    padding: 12px 20px;
+    width: 450px;
 }
 .reset {
     background-color: #8A8787;
-    color: white;
-    padding: 12px 20px;
     border: 1px solid #8A8787;
     border-radius: 15px;
-    font-weight: 400;
+    color: white;
     font-size: 16px;
+    font-weight: 400;
     margin: 5px;
+    padding: 12px 20px;
     width: 125px;
 }
 .enviar {
     background-color: #F0A83E;
-    color: white;
-    padding: 12px 20px;
     border: 1px solid #F0A83E;
     border-radius: 15px;
+    color: white;
     font-weight: 400;
     font-size: 16px;
     margin: 5px;
+    padding: 12px 20px;
     width: 125px;
 }
 .botones {
@@ -242,87 +249,89 @@ body {
 
 
 .subscribirme {
-    position: relative;
-    height: 60px;
     background-color: #F0A83E;
     color: #F3F3F3;
+    display: flex;
+    justify-content: space-between;
+}
+.correo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 .correo img {
-    width: 40px;
-    height: 40px;
-    display: flex;
     display: inline-block;
-    position: absolute;
-    left: 10px;
-    top: 10px;
+    margin: 7px;
+    padding: 10px;
 }
 .correo h3 {
-    font-weight: 700;
-    font-size: 23px;
-    display: flex;
     display: inline-block;
-    position: absolute;
-    left: 70px;
+    font-size: 23px;
+    font-weight: 700;
+    margin: 10px;
+    padding: 10px;
     top: 16px;
 }
+
 .subs {
-    position: absolute;
-    left: 850px;
-    top: 3px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 .submit {
+    align-self: center;
     background-color: #3C2313;
-    color: white;
-    padding: 12px 20px;
     border: 1px solid #3C2313;
     border-radius: 15px;
+    color: white;
+    display: inline-block;
     font-weight: 400;
     font-size: 15px;
+    justify-self: center;
+    margin: 10px;
+    padding: 12px 20px;
     width: 120px;
 }
 .ingresar {
-    color: white;
-    font-weight: 400;
-    width: 400px;
-    padding: 12px 20px;
-    margin: 8px 0;
+    background-color: #FFFFFF;
     border: 1px solid #FFFFFF;
     border-radius: 15px;
-    background-color: #FFFFFF;
+    display: inline-block;
+    color: white;
+    font-weight: 400;
+    margin: 8px 0;
+    padding: 12px 20px;
+    width: 400px;
 }
 
 
 .informacion {
     background-color: #3C2313;
+    display: flex;
+    justify-content: space-between;
+}
+.informacion_todos{
     color: #F3F3F3;
-    height: 284px;
-    position: relative;
+    display: flex;
+    display: inline-block;
+    flex-direction: column;
+    margin: 20px 30px;
 }
 .contacto {
-    position: relative;
-    height: 80px;
-    top: 30px;
-    left: 30px;
+    display: flex;
+    margin: 7px;
+    padding: 5px;
 }
-.contacto img {
-    position: absolute;
+.contacto_dentro {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
-.contacto h3 {
-    position: absolute;
-    left: 90px;
-    top: 10px;
-}
-.contacto p {
-    position: absolute;
-    left: 90px;
-    top: 30px;
-}
-.informacion a img {
-    position: absolute;
-    right: 170px;
-    bottom: 120px;
-    width: 166px;
-    height: 23px;
+.logo_abajo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 30px 50px;
 }
 
 
@@ -332,10 +341,12 @@ footer {
     background-color: #222222;
     color: #F3F3F3;
     text-align: center;
-    height: 20px;
 }
 .footer p {
-    
     font-weight: 700;
     font-size: 10px;
 }
+
+
+
+/* MEDIA */
