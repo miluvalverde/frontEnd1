@@ -121,74 +121,23 @@ body {
     justify-content: space-evenly;
     position: relative;
 }
-.churrasco {
-    height: 350px;
+
+.todos_productos {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 20px;
-    position: relative;
-    width: 265px;
 }
-.producto1 {
-    position: absolute;
-    top: 290px;
-    left: 35px;
+.producto {
     color: #3C2313;
     font-size: 20px;
 }
-.precio1 {
-    position: absolute;
-    top: 320px;
-    left: 100px;
+.precio {
+    display: flex;
     color: #F0A83E;
     font-size: 20px;
-}
-
-.comedero {
-    height: 350px;
-    width: 265px;
-    position: relative;
-    margin: 20px;
-}
-.producto2 {
-    position: absolute;
-    top: 290px;
-    left: 45px;
-    color: #3C2313;
-    font-size: 20px;
-}
-.precio2 {
-    position: absolute;
-    top: 320px;
-    left: 110px;
-    color: #F0A83E;
-    font-size: 20px;
-}
-
-.hueso {
-    height: 350px;
-    margin: 20px;
-    position: relative;
-    width: 265px;
-}
-.producto3 {
-    position: absolute;
-    top: 290px;
-    left: 60px;
-    color: #3C2313;
-    font-size: 20px;
-}
-.precio3 {
-    position: absolute;
-    top: 320px;
-    left: 110px;
-    color: #F0A83E;
-    font-size: 20px;
-}
-
-.imagen {
-    height: 268.86px;
-    position: absolute;
-    top: 10px;
-    width: 265px;
+    justify-content: center;
 }
 
 
@@ -350,3 +299,69 @@ footer {
 
 
 /* MEDIA */
+
+@media (max-width: 1420px) {
+
+    .destacados{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 680px) {
+
+    .menu {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .menu_chico {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .logo_arriba {
+        padding: 10px;
+    }
+
+    .varios h2{
+        font-size: 30px;
+    }
+
+    .destacados {
+        justify-content: center;
+    }
+
+    .input {
+        width: 300px;
+    }
+
+    .subscribirme {
+        flex-direction: column;
+    }
+    
+    .correo h3 {
+        font-size: 19px;
+    }
+
+    .ingresar {
+        width: 220px;
+    }
+
+    .submit {
+        font-size: 11px;
+        width: 100px;
+    }
+
+    .informacion {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+
