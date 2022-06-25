@@ -5,63 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Clase 16</title>
 </head>
 <body>
     <header>
-        <p class="descuento">Descuentos 20%</p>
+        <p class="descuento">20% de descuento en todos los productos!</p>
     </header>
-        <div class="heroes">
-            <br>
-            <h1>Heroes</h1>
-            <br>
+    <div class="menu_arriba">
+        <div class="nombre">
+            <a href="/index.html"><img src="/img/logo.png" alt="logo"></a>
+            <h1>Nombre Tienda</h1>
         </div>
+        <nav class="varios">
+            <a href="">Contacto</a>
+            <a href="">Registrarme</a>
+            <a href="">Ingresar</a>
+        </nav>
+    </div>
     <main>
         <form>
-            <h1>Añadí tu super!</h1>
-            <p>Agregá tu personaje favorito completando las opciones.</p>
+            <div class="titulo_form">
+                <h1>Añadí tu super!</h1>
+                <p>Agregá tu personaje favorito completando las opciones.</p>
+            </div>
             <div class="contenedor">
                 <div class="tarjeta1">
-                    <label for="nombre">Nombre
-                    <input type="text" id="nombre" name="nombre" placeholder="Gabriela" minlength="5" maxlength="25" required tabindex="1">
+                    <label for="nombre">*Nombre
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" minlength="5" maxlength="25" required tabindex="1">
                     </label>
                     <label for="date">Fecha
                     <input type="date" id="date" name="date" placeholder="02/01/1900" tabindex="2"></label>
                     <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Descipción"></textarea>
                 </div>
                 <div class="tarjeta2">
-                    <label for="especie">Especie
+                    <label for="especie" class="tarjeta2_info">*Especie
                         <select name="especie" id="especie">
                             <option value="Especie">Especie</option>
                         </select>
                     </label>
-                    <label for="foto">Agregar foto</label>
-                    <input type="file" id="foto" accept=".jpg, .pdf, .png" name="foto" multiple>
-                    <p>Poderes</p>
-                    <input type="checkbox" id="poderes1" name="poderes" value="Volar">
-                    <label for="poderes1"> Volar</label>
-                    <input type="checkbox" id="poderes2" name="poderes" value="Superinteligencia">
-                    <label for="poderes2"> Superinteligencia </label>
-                    <input type="checkbox" id="poderes3" name="poderes" value="Vista de rayos laser">
-                    <label for="poderes3"> Vista de rayos laser </label>
-                    <input type="checkbox" id="poderes4" name="poderes" value="Billetera gorda">
-                    <label for="poderes4"> Billetera gorda </label>
+                    <label for="foto" class="tarjeta2_info">Agregar foto
+                    <input type="file" id="foto" accept=".jpg, .pdf, .png" name="foto" multiple></label>
+                    <div class="poderes">
+                        <p>Poderes</p>
+                        <input type="checkbox" id="poderes1" name="poderes" value="Volar">
+                        <label for="poderes1"> Volar </label>
+                        <input type="checkbox" id="poderes2" name="poderes" value="Superinteligencia">
+                        <label for="poderes2"> Superinteligencia </label>
+                        <input type="checkbox" id="poderes3" name="poderes" value="Vista de rayos laser">
+                        <label for="poderes3"> Vista de rayos laser </label>
+                        <input type="checkbox" id="poderes4" name="poderes" value="Billetera gorda">
+                        <label for="poderes4"> Billetera gorda </label>
+                    </div>
                     <hr>
-                    <p>Tipo de personaje</p>
-                <label for="tipo1" class="vert"> <input type="radio" id="tipo1" name="tipo" value="Héroe/Heroína"  tabindex="3">
-                Héroe / Heroína  </label>
-                <label for="tipo2" class="vert"><input type="radio" id="tipo2" name="tipo" value="Villano/Villana">
-                Villano / Villana </label>
+                    <div class="personaje">
+                        <p>Tipo de personaje</p>
+                        <label for="tipo1" class="vert"> <input type="radio" id="tipo1" name="tipo" value="Héroe/Heroína"  tabindex="3">
+                        Héroe / Heroína  </label>
+                        <label for="tipo2" class="vert"><input type="radio" id="tipo2" name="tipo" value="Villano/Villana">
+                        Villano / Villana </label>
+                    </div>
                 </div>
             </div>
-                <button type="submit">Enviar</button>
+            <button class="button" type="submit">Añadir</button>
         </form>
     </main>
     <footer>
         <p>Todos los derechos reservados a FRONT END 1</p>
-        <div>
-            <img src="/img/git.png" alt="git hub">
-        </div>
     </footer>
 </body>
 </html>

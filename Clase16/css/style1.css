@@ -1,5 +1,7 @@
 * { 
     box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -7,20 +9,44 @@ body {
 }
 
 
+
 /* HEADER */
 .descuento {
     background-color: #1CD1B0;
     font-size: 15px;
+    font-weight: 400px;
     margin: 0px;
 }
 
-.heroes {
+.menu_arriba {
     position: sticky;
     top: 0;
-    background-color: #00669F;
-    margin: 0px;
-    box-shadow: 2px 2px 5px rgb(85, 85, 85);
     z-index: 1;
+}
+.nombre {
+    align-items: center;
+    background-color: #00669F;
+    color: #FFFFFF;
+    display: flex;
+    margin: 0px;
+}
+.nombre h1 {
+    display: inline-block;
+    font-weight: 400;
+    margin: 3px;
+    padding: 2px;
+}
+.varios {
+    background-color: #001D2D;
+    display: flex;
+    justify-content: flex-end;
+}
+.varios a {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 6px;
+    padding: 6px;
+    text-decoration: none;
 }
 
 
@@ -28,24 +54,69 @@ body {
 /* MAIN */
 main {
     display: flex;
+    color: #FFFFFF;
     justify-content: center;
 }
 form {
+    align-items: center;
     background-color: #00669F;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
     margin: 40px;
+    padding: 20px;
 }
+.titulo_form {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px;
+}
+.titulo_form p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
 .contenedor {
     display: flex;
     flex-direction: row;
 }
+
 .tarjeta1 {
     display: flex;
     flex-direction: column;
+    margin: 20px;
+}
+.tarjeta1 label, .poderes, .personaje, .tarjeta2_info{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 15px;
+}
+#nombre, #date, #comment, #especie, #foto {
+    border:#00669F;
+    border-radius: 3px;
+    padding: 10px;
 }
 
 .tarjeta2 {
     display: flex;
     flex-direction: column;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 20px;
+}
+.personaje p {
+    margin: 5px;
+}
+
+.button {
+    background-color:#1CD1B0;
+    border: #1CD1B0;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
 }
 
 
@@ -75,12 +146,12 @@ footer div img {
     margin-right: 1rem;
 }
 
-@media (max-width: 1023px) {
+/* @media (max-width: 1023px) {
     .fondo {
         flex-wrap: wrap;
     }
 }
-/* arreglar cuando es celular el signo de mas */
+
 
 @media (max-width: 768px){
     footer div{
@@ -92,5 +163,4 @@ footer div img {
     footer div img{
         margin: 0;
     }
-}
-/* queda feo en la compu grande, ver como arreglar */
+} */

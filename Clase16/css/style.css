@@ -1,5 +1,7 @@
 * { 
     box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -7,67 +9,97 @@ body {
 }
 
 
+
 /* HEADER */
 .descuento {
     background-color: #1CD1B0;
     font-size: 15px;
+    font-weight: 400px;
     margin: 0px;
 }
 
-.heroes {
+.menu_arriba {
     position: sticky;
     top: 0;
-    background-color: #00669F;
-    margin: 0px;
-    box-shadow: 2px 2px 5px rgb(85, 85, 85);
     z-index: 1;
+}
+.nombre {
+    align-items: center;
+    background-color: #00669F;
+    color: #FFFFFF;
+    display: flex;
+    margin: 0px;
+}
+.nombre h1 {
+    display: inline-block;
+    font-weight: 400;
+    margin: 3px;
+    padding: 2px;
+}
+.varios {
+    background-color: #001D2D;
+    display: flex;
+    justify-content: flex-end;
+}
+.varios a {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 6px;
+    padding: 6px;
+    text-decoration: none;
 }
 
 
 
 /* MAIN */
 .fondo {
-    margin: auto;
+    align-items: center;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    min-height: 100vh;
     gap: 1rem;
 }
 
 .tarjeta {
-    height: 700;
-    width: 300px;
-    margin: 1.8rem 0rem;
-    position: relative;
     background-color: #F3F3F3;
-    border-radius: 20px;
-    box-shadow: 2px 2px 5px rgb(85, 85, 85)
+    border-radius: 20px 20px 0 0;
+    box-shadow: 2px 2px 5px rgb(85, 85, 85);
+    margin: 7rem 0rem;
+    position: relative;
+    width: 300px;
 }
-
 .batman {
-    position: absolute;
-    left: 90px;
-    top: 130px;
     border-radius: 300px;
+    left: 90px;
+    position: absolute;
+    top: 130px;
 }
-
-.letra {
-    margin: 20px;
-    font-weight: 600;
-}
-
 .corazon {
     position: absolute;
     top: 20px;
     right: 255px;
 }
-
-input {
-    background-color: #00669F;
-    height: 40px;
-    color: white;
+.letra {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    margin: 20px;
 }
-/* no quedo muy bien */
+.titulo_tarjeta {
+    align-self: center;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 10px;
+}
+input {
+    align-self: center;
+    background-color: #00669F;
+    border: #00669F;
+    color: white;
+    margin: 20px;
+    height: 40px;
+    width: 150px;
+}
 .imagen_mas {
     width: 82px;
     height: 82px;
@@ -76,45 +108,42 @@ input {
 
 /* FOOTER */
 footer {
-    position: relative;
     background-color: #00669F;
     color: white;
-    text-align: center;
     padding: 1.2rem 0;
+    position: relative;
+    text-align: center;
 }
 
 footer div {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 0;
+    align-items: center;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    transform: translateY(-50%);
+    
 }
 
-footer div img {
-    width: 8rem;
-    margin-right: 1rem;
-}
 
-@media (max-width: 1023px) {
+@media (max-width: 1130px) {
     .fondo {
         flex-wrap: wrap;
     }
+
+    .imagen_mas {
+        margin: 0 0 3rem 0;
+    }
 }
-/* arreglar cuando es celular el signo de mas */
 
 @media (max-width: 768px){
-    footer div{
-        position: static;
-        text-align: center;
-        justify-content: center;
-        transform: translateY(0);
+    .fondo {
+        flex-direction: column;
     }
-    footer div img{
-        margin: 0;
+    
+
+    .tarjeta {
+        margin: 3rem 0;
+    }
+
+    .imagen_mas {
+        margin: 0 0 3rem 0;
     }
 }
-/* queda feo en la compu grande, ver como arreglar */
