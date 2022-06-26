@@ -33,11 +33,14 @@ body {
     display: flex;
     display: inline-block;
     flex-direction: row;
-    padding: 1rem;
 }
-.nav_top li a {
+.nav_top a {
     color: #242E52;
     text-decoration: none;
+    padding: 1rem;
+}
+.nav_top a:hover {
+    color: #B3B2B7;
 }
 .button_started {
     background-color:  #F3603B;
@@ -177,7 +180,7 @@ body {
     align-items: center;
     padding: 3rem 0;
 }
-.bottom > h2 {
+.bottom h2 {
     color: #FFFFFF;
     font-size: 40px;
     font-weight: 700;
@@ -189,8 +192,7 @@ body {
     border-radius: 30px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
     color: #F3603B;
-    
-font-weight: 500;
+    font-weight: 500;
     margin: 1rem 8rem 1rem 2rem;
     padding: 13px 30px;
 }
@@ -276,4 +278,134 @@ font-weight: 500;
 
 
 /* MEDIA */
+@media (max-width: 375px) {
+
+    .header {
+        flex-direction: column;
+    }
+
+    .logo_top {
+        margin: 1rem;
+    }
+
+    .nav_top {
+        margin: 0.2rem;
+    }
+
+    .nav_top a{
+        display: flex;
+        display: inline-block;
+        flex-direction: row;
+        padding: 0.5rem;
+    }
+
+    .header button {
+        display: none;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        text-align: center;
+        padding: 0;
+    }
+
+    .title {
+        margin: 1rem 0.5rem;
+        display: flex;
+        display: inline-block;
+        justify-content: center;
+        order: 1;
+    }
+
+    .title h1 {
+        font-size: 40px;
+    }
+
+    .title p {
+        color: #B3B2B7;
+        margin: 1rem;
+    }
+
+    .image_title img{
+        width: 300px;
+        height: 270px;
+        order: 0;
+        margin: 1rem;
+    }
+
+    .title1 {
+        text-align: center;
+        margin: 1.5rem;
+        margin-top: 4rem;
+    }
+
+    .title1 h2{
+        font-size: 26px;
+        margin: 1.5rem;
+    }
+
+    .title1 p {
+        color: #B3B2B7;
+        margin: 1rem;
+    }
+
+    .middle_divs {
+        background-color: #fff6f6;
+    }
+
+    .caracteristics {
+        margin: 1rem;
+    }
+    
+    .paragraphs {
+        margin: 0;
+    }
+
+    .number {
+        height: 30px;
+        padding: 0.2rem;
+        text-align: center;
+        width: 200px;
+    }
+
+    .review h2{
+        margin: 1rem;
+        justify-content: center;
+        padding: 0.5rem;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .people {
+        flex-direction: column;
+    }
+
+    .bottom {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .bottom h2 {
+        display: flex;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .button_started2 {
+        margin: 0.5rem;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    /* falta organizar bien el footer */
+
+
+}
+
 
