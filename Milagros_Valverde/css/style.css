@@ -7,7 +7,7 @@
 body {
     background-image: url(../img/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: right top;
     background-size: 700px;
     font-family: 'Be Vietnam Pro', sans-serif;
 }
@@ -55,6 +55,9 @@ body {
 .button_started:hover {
     background-color: rgb(248, 167, 149);
     border-color: rgb(248, 167, 149);
+}
+.menu_phone {
+    display: none;
 }
 
 
@@ -172,9 +175,11 @@ body {
 
 
 .bottom {
-    background-image: url(../img/bg-tablet-pattern.svg);
+    background-image: url(../img/bg-tablet-pattern2.svg);
     background-repeat: no-repeat;
     background-color: #F3613C;
+    background-position: top left;
+    background-size: 600px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -211,21 +216,17 @@ body {
     justify-content: space-around;
     padding: 2.5rem 0;
 }
-.logo_icons {
-    align-items: center;
-    display: flex;
-    display: inline-block;
-}
 .logo_icons img {
     margin: 1rem;
 }
 .icons {
     margin: 2rem 1rem;
 }
-.icons i {
-    margin: 0.4rem;
+.icons img {
+    margin: 0.2rem;
 }
-.icons i:hover {
+/* no queda bien */
+.icons img:hover {
     background-color: #F3603B;
 }
 
@@ -267,7 +268,7 @@ body {
     background-color: rgb(247, 183, 168);
     border-color: rgb(247, 183, 168);
 }
-.form p {
+.copyright {
     color: #8C8C94;
     font-size: 12.5px;
     font-weight: 500;
@@ -280,8 +281,12 @@ body {
 /* MEDIA */
 @media (max-width: 375px) {
 
+    body {
+        background-size: 400px;
+    }
+
     .header {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .logo_top {
@@ -289,7 +294,7 @@ body {
     }
 
     .nav_top {
-        margin: 0.2rem;
+        display: none;
     }
 
     .nav_top a{
@@ -301,6 +306,12 @@ body {
 
     .header button {
         display: none;
+    }
+
+    .menu_phone {
+        display: flex;
+        margin: 1rem;
+        padding: 1rem;
     }
 
     .container {
@@ -384,8 +395,9 @@ body {
     }
 
     .bottom {
+        background-position: left bottom;
+        background-size: 400px;
         flex-wrap: wrap;
-        margin: 0;
     }
 
     .bottom h2 {
@@ -404,7 +416,25 @@ body {
     }
 
     /* falta organizar bien el footer */
+    .form form {
+        order: 1;
+    }
 
+    .menu_bottom {
+        order: 2;
+    }
+
+    .icons {
+        order: 3;
+    }
+
+    .logo_icons img {
+        order: 4;
+    }
+
+    .copyright {
+        order: 5;
+    }
 
 }
 
