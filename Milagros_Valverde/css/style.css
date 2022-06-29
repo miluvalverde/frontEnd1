@@ -4,11 +4,18 @@
     margin: 0;
 }
 
+@keyframes background {
+    50% { 
+        background-position: bottom left;
+    }
+}
+@keyframes background_bottom {
+    50% { 
+        background-position: top right;
+    }
+}
+
 body {
-    background-image: url(../img/bg-tablet-pattern.svg);
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 700px;
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
@@ -63,6 +70,13 @@ body {
 
 
 /* MAIN */
+main {
+    animation: background 20s infinite;
+    background-image: url(../img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 700px;
+}
 .container {
     display: flex;
     justify-content: flex-end;
@@ -179,6 +193,7 @@ body {
 
 
 .bottom {
+    animation: background_bottom 20s infinite;
     background-image: url(../img/bg-tablet-pattern2.svg);
     background-repeat: no-repeat;
     background-color: #F3613C;
@@ -229,7 +244,6 @@ body {
 .icons img {
     margin: 0.2rem;
 }
-/* no queda bien */
 .icons img:hover {
     background-color: #F3603B;
 }
@@ -407,8 +421,18 @@ body {
         display: none;
     }
 
+    .people_review2 {
+        margin-bottom: 1rem;
+    }
+
     .people_review3 {
         display: none;
+    }
+
+    .scroll {
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
     }
 
     .bottom {
