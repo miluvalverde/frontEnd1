@@ -5,12 +5,18 @@
 }
 
 @keyframes background {
-    50% { 
+    0% {
+        background-position: top right;
+    }
+    100% { 
         background-position: bottom left;
     }
 }
 @keyframes background_bottom {
-    50% { 
+    0% {
+        background-position: top left;
+    }
+    100% { 
         background-position: top right;
     }
 }
@@ -71,7 +77,7 @@ body {
 
 /* MAIN */
 main {
-    animation: background 20s infinite;
+    animation: background 20s infinite alternate;
     background-image: url(../img/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
     background-position: right top;
@@ -192,8 +198,8 @@ main {
 }
 
 
-.bottom {
-    animation: background_bottom 20s infinite;
+.bottom_main {
+    animation: background_bottom 20s infinite alternate;
     background-image: url(../img/bg-tablet-pattern2.svg);
     background-repeat: no-repeat;
     background-color: #F3613C;
@@ -204,7 +210,7 @@ main {
     align-items: center;
     padding: 3rem 0;
 }
-.bottom h2 {
+.bottom_main h2 {
     color: #FFFFFF;
     font-size: 40px;
     font-weight: 700;
@@ -233,7 +239,7 @@ main {
     color: #FFFFFF;
     display: flex;
     justify-content: space-around;
-    padding: 2.5rem 0;
+    padding: 2rem 0;
 }
 .logo_icons img {
     margin: 1rem;
@@ -249,17 +255,20 @@ main {
 }
 
 
-.menu_bottom ul {
+.menu_bottom1 ul, .menu_bottom2 ul {
     list-style-type: none;
 }
-.menu_bottom li{
+.menu_bottom1 li, .menu_bottom2 li {
     padding: 0.4rem;
 }
-.menu_bottom a {
+.menu_bottom1 a, .menu_bottom2 a {
     color: #FFFFFF;
     text-decoration: none;
 }
-.menu_bottom a:hover {
+.menu_bottom1 a:hover {
+    color: #F3603B;
+}
+.menu_bottom2 a:hover {
     color: #F3603B;
 }
 
@@ -288,11 +297,14 @@ main {
     background-color: rgb(247, 183, 168);
     border-color: rgb(247, 183, 168);
 }
-.copyright {
+.copyright1 {
     color: #8C8C94;
     font-size: 12.5px;
     font-weight: 500;
     margin: 2rem 0;
+}
+.copyright2 {
+    display: none;
 }
 
 
@@ -405,6 +417,10 @@ main {
         width: 200px;
     }
 
+    .review {
+        margin: 2rem;
+    }
+
     .review h2{
         margin: 1rem;
         justify-content: center;
@@ -433,16 +449,21 @@ main {
         display: flex;
         justify-content: center;
         margin: 1rem;
+        color: #F3603B;
     }
 
-    .bottom {
+    .button_started2 {
+        margin-top: 2rem;
+    }
+
+    .bottom_main {
         background-position: left bottom;
-        background-size: 400px;
+        background-size: 500px;
         flex-wrap: wrap;
         padding: 80px 15px;
     }
 
-    .bottom h2 {
+    .bottom_main h2 {
         display: flex;
         font-size: 35px;
         text-align: center;
@@ -461,25 +482,44 @@ main {
         flex-direction: column;
     }
 
-    /* falta organizar bien el footer */
-    .form > form {
-        order: 0;
+    .footer {
+        text-align: center;
     }
 
-    .menu_bottom {
-        order: 1;
-        flex-direction: row;
-    }
-
-    .icons {
+    .menu_bottom1, .menu_bottom2 {
         order: 2;
     }
 
-    .logo_icons img {
+    .logo_icons {
+        margin: 1rem;
         order: 3;
     }
 
-    .copyright {
+    .icons {
+        margin: 0.5rem;
+    }
+
+    .icons img {
+        height: 30px;
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+        width: 31px;
+    }
+
+    .form_copyright {
+        order: 1;
+    }
+
+    .copyright1 {
+        display: none;
+    }
+
+    .copyright2 {
+        color: #8C8C94;
+        display: flex;
+        font-size: 12.5px;
+        font-weight: 500;
+        margin: auto;
         order: 4;
     }
 }
