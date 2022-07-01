@@ -10,6 +10,7 @@
 </head> 
 <body>
     <header class="header"> <!-- Section Header -->
+        <!-- Section Menu -->
         <a class="logo_top" href="/index.html"><img src="/img/logo.svg" alt="logo"></a>
         <nav class="nav_top">
             <ul>
@@ -22,7 +23,19 @@
         </nav>
         <button class="button_started" type="button">Get Started</button>
         <div class="menu_phone">
-            <a href=""><img src="/img/icon-hamburger.svg" alt="menu"></a> <!-- que funcione como menu, fijarse en wpp que pasaron un insta -->
+            <input type="checkbox" id="hamburger-input" class="burger-shower" />
+            <label id="hamburger-menu" for="hamburger-input">
+            <nav id="sidebar-menu"> <!-- Section Menu Mobile -->
+                <ul>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </nav>
+            </label>
+            <div class="overlay"></div>
         </div>
     </header>
     <main> <!-- Section Main -->
@@ -100,7 +113,7 @@
         <div class="footer">
             <div class="logo_icons"> <!-- Section Icons -->
                 <div>
-                    <img src="/img/logo_dark.png" alt="logo">
+                    <a href=""><img src="/img/logo_dark.png" alt="logo"></a>
                 </div>
                 <div class="icons">
                     <a href=""><img src="/img/icon-facebook.svg" alt="logo facebook"></a> 
@@ -110,22 +123,22 @@
                     <a href=""><img src="/img/icon-instagram.svg" alt="logo instagram"></a> 
                 </div>
             </div>
-            <div class="menu_bottom_big">
-                <div class="menu_bottom1"> <!-- Section Menú Bottom -->
+            <div class="menu_bottom">
+                <nav class="nav_bottom1"> <!-- Section Menú Bottom -->
                     <ul> 
                         <li><a href="/index.html">Home</a></li>
                         <li><a href="">Pricing</a></li>
                         <li><a href="">Products</a></li>
                         <li><a href="">About us</a></li>
                     </ul>
-                </div>
-                <div class="menu_bottom2">
+                </nav>
+                <nav class="nav_bottom2">
                     <ul>
                         <li><a href="">Careers</a></li>
                         <li><a href="">Community</a></li>
                         <li><a href="">Privacy Policy</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
             <div class="form_copyright">
                 <div class="form" > <!-- Section Form -->
