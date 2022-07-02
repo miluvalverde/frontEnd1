@@ -39,7 +39,7 @@ body {
     justify-content: space-between;
     position: sticky;
     top: 0;
-    z-index: 0;
+    z-index: 1;
 }
 .logo_top {
     margin: 1rem 2rem 1rem 8rem;
@@ -95,32 +95,35 @@ main {
 }
 .title {
     align-self: center;
-    margin-right: 4rem;
+    margin-right: 2.5rem;
 }
 .title h1 {
     color: #242E52;
     font-size: 58px;
     font-weight: 700;
 }
-.title p {
-    margin-right: 12rem;
-    margin-top: 1rem;
+.title p, .title1 p {
     font-size: 16.5584px;
     font-weight: 500;
+    margin-right: 5em;
+    padding-top: 1.5rem;
 }
-.title .button_started {
+.button_started {
     margin: 2rem 0 0 0;
 }
-
+.header > .button_started {
+    margin: 1rem 7rem 1rem 2rem;
+}
 .title1 {
     align-self: flex-start;
-    margin-right: 4rem;
+    margin-right: 3rem;
 }
 .title1 h2 {
     color: #232851;
     font-weight: 700;
     font-size: 36px;
 }
+
 .caracteristics {
     display: flex;
     margin: 0 2rem 2rem 5rem;
@@ -179,12 +182,14 @@ main {
 .people_img {
     width: 70px;
     height: 70px;
+    position: relative;
+    bottom: 35px
 }
 .people_review1 h4, .people_review2 h4, .people_review3 h4 {
     color: #242E53;
-    font-size: 16.0714px;
+    font-size: 16px;
     font-weight: 700;
-    margin: 1.5rem;
+    margin: 0 1.5 rem 1.5 rem 1.5rem;
 }
 .people_review1 p, .people_review2 p, .people_review3 p {
     color: #B9B9C1;
@@ -325,7 +330,7 @@ main {
 
 
 /* MEDIA */
-@media (max-width: 376px) {
+@media (max-width: 490px) {
 
     body {
         background-size: 400px;
@@ -393,7 +398,7 @@ main {
         padding: 0px;
         position: fixed;
         right: 20px;
-        top: 15px;
+        top: 20px;
         width: 30px;
     }
     
@@ -422,7 +427,7 @@ main {
     
     #hamburger-menu a {
         color: #242E52;
-        font-size: 1.3rem;
+        font-size: 17px;
         font-weight: 500;
         text-decoration: none;
     }
@@ -459,10 +464,11 @@ main {
     }
 
     .title {
-        margin: 1rem 0.5rem;
         display: flex;
         display: inline-block;
+        flex-wrap: wrap;
         justify-content: center;
+        margin: 1rem 0.5rem;
         order: 1;
     }
 
@@ -475,22 +481,21 @@ main {
         margin: 1rem;
     }
 
-    .image_title img{
-        width: 300px;
-        height: 270px;
-        order: 0;
-        margin: 1rem;
-    }
-
     .title1 {
-        text-align: center;
         margin: 1.5rem;
         margin-top: 4rem;
+        text-align: center;
     }
 
     .title1 h2{
         font-size: 26px;
         margin: 1.5rem;
+    }
+
+    .image_title img{
+        height: 270px;
+        margin: 1rem;
+        order: 0;
     }
 
     .title1 p {
@@ -516,9 +521,6 @@ main {
 
     .number {
         height: 30px;
-        padding: 0.2rem;
-        text-align: center;
-        width: 200px;
     }
 
     .review {
@@ -526,15 +528,12 @@ main {
     }
 
     .review h2{
-        margin: 1rem;
+        font-size: 25px;
         justify-content: center;
+        margin: 1rem;
+        margin-bottom: 3rem;
         padding: 0.5rem;
         text-align: center;
-        font-size: 25px;
-    }
-
-    .people {
-        flex-direction: column;
     }
 
     .people_review1 {
@@ -545,15 +544,19 @@ main {
         margin-bottom: 1rem;
     }
 
+    .people_review2 h4 {
+        margin-top: 0;
+    }
+
     .people_review3 {
         display: none;
     }
 
     .scroll {
+        color: #F3603B;
         display: flex;
         justify-content: center;
         margin: 1rem;
-        color: #F3603B;
     }
 
     .button_started2 {
@@ -570,8 +573,8 @@ main {
     .bottom_main h2 {
         display: flex;
         font-size: 35px;
-        text-align: center;
         padding: 10px;
+        text-align: center;
     }
 
     .button_started3 {
@@ -579,22 +582,16 @@ main {
     }
 
     .footer {
+        flex-direction: column;
         flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .footer {
-        flex-direction: column;
-    }
-
-    .footer {
         text-align: center;
     }
 
     .menu_bottom {
-        order: 2;
-        margin-top: 0.5rem;
+        justify-content: space-around;
         margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        order: 2;
         text-align: start;
     }
 
@@ -604,8 +601,8 @@ main {
     }
 
     .nav_bottom2 ul {
-        margin-right: 1.5rem; 
         margin-left: 3rem;
+        margin-right: 1.5rem; 
     }
 
     .logo_icons {
